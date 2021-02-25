@@ -19,6 +19,10 @@ try:
             language="en-US"
         )
     print("Decoded Text : {}".format(text))
+    file = open("speech.txt", "w")
+    file.write(text)
+    file.close()
+    
 
 except Exception as ex:
     print(ex)
