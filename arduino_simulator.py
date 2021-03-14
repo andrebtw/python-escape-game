@@ -15,6 +15,4 @@ info.place(x=630, y=200)
 
 
 
-
-
 gui.mainloop()
