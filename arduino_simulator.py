@@ -1,9 +1,20 @@
 from tkinter import *
 import tkinter
+import asyncio
+
+temp=25.55
 
 gui = Tk(className='ARDUINO SIMULATION')
 gui.geometry("800x500")
 gui.configure(bg='black')
+
+
+async def taking_temp_activate():
+    f = open("temp.txt", "w")
+    f.write(temp)
+    f.close()
+
+
 
 
 
