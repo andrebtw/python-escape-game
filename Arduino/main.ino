@@ -1,5 +1,5 @@
-const int info_button = 2;
-const int mic_button = 3;
+const int info_button = 8;
+const int mic_button = 9;
 
 int info_state = 0;
 int mic_state = 0;
