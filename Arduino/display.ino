@@ -3,7 +3,7 @@ int Contrast=0;
  LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 
-void lcd_print(text, x, y, clear) {
+void lcd_print(char text[] ,int x, int  y, bool clear) {
   if (clear == true) {
     lcd.clear();
   }
