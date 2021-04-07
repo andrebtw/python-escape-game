@@ -14,6 +14,13 @@ void lcd_print(char text[] ,int x, int  y, bool clear) {
 
 }
 
+void lcd_print_move(char text[] ,int x, int  y, bool clear, int steps, int milliseconds) {
+  if (clear == true) {
+    lcd.clear();
+  }
+
+  }
+
 
  void setup()
  {
@@ -23,5 +30,6 @@ void lcd_print(char text[] ,int x, int  y, bool clear) {
 
 void loop()
 {
-  lcd_print("THIS IS A TEST TEXT", 4,0,true);
+  lcd_print("THIS IS A TEST TEXT", 1,0,false);
+  lcd_print("TEST", 6,1,false);
 }
