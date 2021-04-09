@@ -1,6 +1,5 @@
 int info_count=1;
 
-
 //text , x,  y, clear_line, clear_all
 
 void info() {
