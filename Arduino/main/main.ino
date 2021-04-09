@@ -20,9 +20,10 @@ void loop(){
 
   if (info_state==HIGH) {
       Serial.print("INFO");
-      /*info();*/
+      info();
     }
   if (mic_state==HIGH) {
+    
     Serial.print("REC");
     /*rec();*/
   }
