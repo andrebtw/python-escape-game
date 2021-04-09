@@ -1,3 +1,9 @@
+#include <LiquidCrystal.h>
+int Contrast=0;
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+
+
 const int info_button = 8;
 const int mic_button = 9;
 
@@ -7,6 +13,9 @@ int mic_state = 0;
 
 
 void setup(){
+  analogWrite(6,Contrast);
+  lcd.begin(16, 2);
+  
   Serial.begin(9600);
   pinMode(info_button, INPUT);
   pinMode(mic_button, INPUT);
@@ -21,6 +30,7 @@ void loop(){
   if (info_state==HIGH) {
       Serial.print("INFO");
       info();
+      delay(300);
     }
   if (mic_state==HIGH) {
     

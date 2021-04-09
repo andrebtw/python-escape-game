@@ -1,10 +1,3 @@
-//INITIALISATION
-#include <LiquidCrystal.h>
-int Contrast=0;
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-
-
-
 
 
 //PRINT LCD
@@ -31,19 +24,5 @@ void lcd_print_move(char text[] ,int x, int  y, int steps, int milliseconds, boo
   if (clear_all == true) {
     lcd.clear();
   }
-
-}
-
-
-
-
-void setup()
-{
-   analogWrite(6,Contrast);
-   lcd.begin(16, 2);
-}
-
-void loop()
-{
 
 }
