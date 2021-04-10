@@ -21,7 +21,6 @@ void setup(){
 }
 
 
-
 void loop(){
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
@@ -35,5 +34,6 @@ void loop(){
 
     Serial.print("REC");
     rec();
+    delay(700);
   }
 }
