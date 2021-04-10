@@ -19,7 +19,7 @@ void setup(){
   pinMode(info_button, INPUT);
   pinMode(mic_button, INPUT);
 }
-dd
+
 
 
 void loop(){
