@@ -34,6 +34,6 @@ void loop(){
   if (mic_state==HIGH) {
 
     Serial.print("REC");
-    /*rec();*/
+    rec();
   }
 }
