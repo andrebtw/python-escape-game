@@ -3,6 +3,7 @@ int info_count=1;
 //text , x,  y, clear_line, clear_all
 
 void info() {
+    Serial.print("info");
     if (info_count == 1) {
       lcd_print("YOU MUST GET THE", 0, 0, false, true);
       lcd_print("TEMPERATURE", 2, 1, false, false);

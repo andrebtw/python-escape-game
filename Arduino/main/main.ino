@@ -26,13 +26,10 @@ void loop(){
   mic_state=digitalRead(mic_button);
 
   if (info_state==HIGH) {
-      Serial.print("INFO");
       info();
       delay(700);
     }
   if (mic_state==HIGH) {
-
-    Serial.print("REC");
     rec();
     delay(700);
   }
