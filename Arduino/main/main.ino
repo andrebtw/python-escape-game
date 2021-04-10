@@ -14,12 +14,12 @@ int contrast=0;
 void setup(){
   analogWrite(6, contrast);
   lcd.begin(16, 2);
-  
+
   Serial.begin(9600);
   pinMode(info_button, INPUT);
   pinMode(mic_button, INPUT);
 }
-
+dd
 
 
 void loop(){
@@ -32,7 +32,7 @@ void loop(){
       delay(700);
     }
   if (mic_state==HIGH) {
-    
+
     Serial.print("REC");
     /*rec();*/
   }
