@@ -1,3 +1,3 @@
 void rec () {
-  Serial.print("recording");
+  Serial.println("recording");
   }

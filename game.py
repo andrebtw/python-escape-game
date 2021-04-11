@@ -1,4 +1,12 @@
 
+
+
+#ARDUINO CFG
+import serial
+ser = serial.Serial('COM4')
+
+
+
 # Number to Words
 
 # Main Logic
@@ -77,7 +85,12 @@ def getWords(number):
 
 
 
-
+while True :
+    print("test")
+    ser_b = ser.readline()
+    print(ser_b)
+    if ser== "recording":
+        print("recording")
 
 
 temp =  open("temp.txt", "r")
