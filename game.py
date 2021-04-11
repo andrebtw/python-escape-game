@@ -89,7 +89,7 @@ while True :
     print("test")
     ser_b = ser.readline()
     print(ser_b)
-    if ser== "recording":
+    if "recording" in ser:
         print("recording")
 
 

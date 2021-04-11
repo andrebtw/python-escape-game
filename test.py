@@ -1,9 +1,8 @@
 import serial
-import io
 
 arduino = serial.Serial('COM4', 9600)
 
-
 while True:
-    msg = arduino.readline().strip()
-    print(msg)
+	data = arduino.readline()[:-2] #the last bit gets rid of the new-line chars
+	if data:
+		print (data)
