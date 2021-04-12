@@ -86,11 +86,9 @@ def getWords(number):
 
 
 while True :
-    print("test")
     ser_b = ser.readline()
     print(ser_b)
-    if "recording" in ser:
-        print("recording")
+    print(type(ser_b))
 
 
 temp =  open("temp.txt", "r")
