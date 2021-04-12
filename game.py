@@ -1,6 +1,10 @@
+import speech_recognition as sr
+import serial
 
+# MIC CFG
+recognizer = sr.Recognizer()
 
-#ARDUINO CFG
+# ARDUINO CFG
 import serial
 ser = serial.Serial('COM4')
 
