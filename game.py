@@ -89,6 +89,7 @@ while True :
     arduino_serial = str(arduino_serial)
 
     if "recording" in arduino_serial :
+        pass
 
 
 
