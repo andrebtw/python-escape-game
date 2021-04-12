@@ -1,6 +1,5 @@
 
 
-
 #ARDUINO CFG
 import serial
 ser = serial.Serial('COM4')
@@ -86,9 +85,11 @@ def getWords(number):
 
 
 while True :
-    ser_b = ser.readline()
-    print(ser_b)
-    print(type(ser_b))
+    arduino_serial = ser.readline()
+    arduino_serial = str(arduino_serial)
+
+    if "recording" in arduino_serial :
+
 
 
 temp =  open("temp.txt", "r")
