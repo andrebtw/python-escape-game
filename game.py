@@ -93,7 +93,25 @@ while True :
     arduino_serial = str(arduino_serial)
 
     if "recording" in arduino_serial :
-        pass
+        with sr.Microphone() as source:
+            print("Adjusting noise ")
+            recognizer.adjust_for_ambient_noise(source, duration=1)
+            print("Recording for 4 seconds")
+            print("Done recording")
+
+        ''' Recorgnizing the Audio '''
+        try:
+            print("Recognizing the text")
+            text = recognizer.recognize_google(
+                    recorded_audio,
+                    language="en-US"
+                )
+            print("Decoded Text : {}".format(text))
+
+
+        except Exception as ex:
+            print(ex)
+
 
 
 
