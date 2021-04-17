@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import serial
+import re
 
 # MIC CFG
 recognizer = sr.Recognizer()
@@ -113,9 +114,7 @@ while True :
             arduino_serial = ser.readline()
             arduino_serial = str(arduino_serial)
 
-            if arduino_serial.isdigit():
-                arduino_serial=arduino_serial.replace("b'", "")
-                arduino_serial=arduino_serial.replace("\r\n'", "")
+            arduino_serial = re.sub("\D","",arduino_serial)
 
             print(arduino_serial)
 
