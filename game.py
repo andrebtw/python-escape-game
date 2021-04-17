@@ -110,6 +110,16 @@ while True :
                 )
             print("Decoded Text : {}".format(text))
 
+            arduino_serial = ser.readline()
+            arduino_serial = str(arduino_serial)
+
+            if arduino_serial.isdigit():
+                arduino_serial=arduino_serial.replace("b'", "")
+                arduino_serial=arduino_serial.replace("\r\n'", "")
+
+            print(arduino_serial)
+
+
 
         except Exception as ex:
             print(ex)

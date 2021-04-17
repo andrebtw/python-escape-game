@@ -46,7 +46,6 @@ void temp_potentiometer() {
     temp=28;
   }
 
-
-
   Serial.println(temp);
+  
 }
