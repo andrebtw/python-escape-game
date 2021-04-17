@@ -117,7 +117,7 @@ while True :
 
 
 
-temp =  open("temp.txt", "r")
+temp =open("temp.txt", "r")
 
 temp=temp.read()
 
