@@ -22,7 +22,7 @@ void setup(){
 
 
 void loop(){
-  temp_potentiometer()
+  temp_potentiometer();
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
 
