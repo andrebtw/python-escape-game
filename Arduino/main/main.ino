@@ -22,16 +22,20 @@ void setup(){
 
 
 void loop(){
-  temp_potentiometer();
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
 
   if (info_state==HIGH) {
       info();
-      delay(700);
+      delay(3000);
     }
-  if (mic_state==HIGH) {
+  else if (mic_state==HIGH) {
     rec();
     delay(700);
   }
+
+  else {
+      temp_potentiometer();
+      delay(300);
+    }
 }

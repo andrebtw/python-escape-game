@@ -48,4 +48,12 @@ void temp_potentiometer() {
 
   Serial.println(temp);
   
+  String temp_str = String(temp);
+
+  lcd.clear();
+  lcd.setCursor(7,0);
+  lcd.print(temp_str);
+  
+  lcd_print("C", 7, 1, false, false);
+  
 }
