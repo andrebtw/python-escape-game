@@ -123,6 +123,25 @@ while True :
         except Exception as ex:
             print(ex)
 
+        arduino_serial=str(arduino_serial)
+        text=str(text)
+
+        first_character=arduino_serial[0]
+        second_character=arduino_serial[1]
+
+        first_character=int(first_character)
+        second_character=int(second_character)
+
+        first_character=first_character**2
+        second_character=second_character**2
+
+        final_number=first_character+second_character
+        final_number=str(final_number)
+
+        if text in final_number:
+            print("CORRECT")
+        else:
+            print("nope xd")
 
 
 
