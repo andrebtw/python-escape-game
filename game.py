@@ -20,18 +20,20 @@ while True :
     arduino_serial = str(arduino_serial)
 
     if "recording" in arduino_serial :
-        print("it is actually recording xd")
         with sr.Microphone() as source:
-            arduino.write(bytes("Adjusting Noise",'utf-8'))
-            print("Adjusting noise ")
+            ser.write(str.encode('Adjusting Noise'))
+            print("Adjusting noise")
             recognizer.adjust_for_ambient_noise(source, duration=1)
+            ser.write(str.encode('Recording for 4 seconds'))
             print("Recording for 4 seconds")
             recorded_audio = recognizer.listen(source, timeout=4)
             print("Done recording")
+            ser.write(str.encode('Done recording'))
 
         ''' Recorgnizing the Audio '''
         try:
             print("Recognizing the text")
+            ser.write(str.encode('Recognizing the text'))
             text = recognizer.recognize_google(
                     recorded_audio,
                     language="en-US"
@@ -66,6 +68,8 @@ while True :
         final_number=str(final_number)
 
         if text in final_number:
+            ser.write(str.encode('correct'))
             print("CORRECT")
         else:
-            print("nope xd")
+            ser.write(str.encode('incorrect'))
+            print("INCORRECT")
