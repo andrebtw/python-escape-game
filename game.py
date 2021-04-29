@@ -8,7 +8,6 @@ recognizer = sr.Recognizer()
 
 # ARDUINO CFG
 import serial
-ser = serial.Serial('COM4')
 
 ser = str(sys.argv[1])
 
