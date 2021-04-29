@@ -11,7 +11,7 @@ recognizer = sr.Recognizer()
 # ARDUINO CFG
 import serial
 
-ser = str(sys.argv[1])
+ser = serial.Serial(str(sys.argv[1]))
 
 
 
