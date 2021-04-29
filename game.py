@@ -1,3 +1,5 @@
+#importation des librairies importantes
+
 import speech_recognition as sr
 import serial
 import re
