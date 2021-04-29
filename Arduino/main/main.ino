@@ -32,6 +32,7 @@ void setup(){
 
 
 void loop(){
+  verify ();
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
 
@@ -46,7 +47,8 @@ void loop(){
 
   else {
       temp_potentiometer();
-      delay(300);
+      
+      delay(50);
 }
 
 }
