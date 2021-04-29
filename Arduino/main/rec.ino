@@ -1,7 +1,7 @@
 void rec () {
   Serial.println("recording");
   lcd.clear();
-  
+
   lcd_print("Adjusting noise", 0,0, false, true);
   delay(2000);
   lcd.clear();
@@ -20,7 +20,7 @@ void verify () {
   incoming = Serial.readString();
 
   if(incoming == "correct") {
-    
+
     lcd.clear();
     lcd_print("CORRECT", 3,0, false, true);
     delay(2000);
@@ -31,5 +31,5 @@ void verify () {
     lcd_print("INCORRECT", 3,0, false, true);
     lcd_print("TRY AGAIN", 3,0, false, false);
     delay(2000);
-  } 
   }
+}

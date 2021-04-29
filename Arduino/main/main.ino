@@ -3,14 +3,9 @@
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 
-
-
-
-
-
 const int info_button = 8;
 const int mic_button = 9;
-const int servo_pin = 7; 
+const int servo_pin = 7;
 
 int info_state = 0;
 int mic_state = 0;
@@ -18,7 +13,7 @@ int mic_state = 0;
 int contrast=0;
 
 
-Servo motor; 
+Servo motor;
 
 void setup(){
   analogWrite(6, contrast);
@@ -27,7 +22,7 @@ void setup(){
   Serial.begin(9600);
   pinMode(info_button, INPUT);
   pinMode(mic_button, INPUT);
-  motor.attach(servo_pin); 
+  motor.attach(servo_pin);
 }
 
 
@@ -47,7 +42,7 @@ void loop(){
 
   else {
       temp_potentiometer();
-      
+
       delay(50);
 }
 
