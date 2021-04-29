@@ -1,6 +1,6 @@
 void rec () {
   Serial.println("recording");
-  String incoming;
+  /*String incoming;
 
   if(Serial.available() > 0) {
     incoming = Serial.read();
@@ -9,6 +9,6 @@ void rec () {
     yourFunction();
   } else {
     errorFunction();
-  }
+  }*/
 
-  }
+}
