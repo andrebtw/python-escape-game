@@ -12,15 +12,3 @@ void lcd_print(char text[] ,int x, int  y, bool clear_line, bool clear_all) {
   lcd.setCursor(x,y);
   lcd.print(text);
 }
-
-
-
-
-
-//PRINT LCD MOVING CHARACTERS
-void lcd_print_move(char text[] ,int x, int  y, int steps, int milliseconds, bool clear_all) {
-  if (clear_all == true) {
-    lcd.clear();
-  }
-
-}
