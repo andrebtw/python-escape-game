@@ -32,7 +32,6 @@ void setup(){
 
 
 void loop(){
-  //servo_motor();
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
 
@@ -45,9 +44,9 @@ void loop(){
     delay(700);
   }
 
-  //else {
-  //    temp_potentiometer();
-  //    delay(300);
-//}
+  else {
+      temp_potentiometer();
+      delay(300);
+}
 
 }
