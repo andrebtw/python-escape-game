@@ -3,6 +3,11 @@
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 
+
+
+
+
+
 const int info_button = 8;
 const int mic_button = 9;
 const int servo_pin = 7; 
@@ -27,7 +32,7 @@ void setup(){
 
 
 void loop(){
-  servo_motor();
+  //servo_motor();
   info_state=digitalRead(info_button);
   mic_state=digitalRead(mic_button);
 
@@ -40,8 +45,9 @@ void loop(){
     delay(700);
   }
 
-  else {
-      temp_potentiometer();
-      delay(300);
-    }
+  //else {
+  //    temp_potentiometer();
+  //    delay(300);
+//}
+
 }
