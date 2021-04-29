@@ -22,6 +22,7 @@ while True :
     if "recording" in arduino_serial :
         print("it is actually recording xd")
         with sr.Microphone() as source:
+            arduino.write(bytes("Adjusting Noise",'utf-8'))
             print("Adjusting noise ")
             recognizer.adjust_for_ambient_noise(source, duration=1)
             print("Recording for 4 seconds")
