@@ -16,7 +16,6 @@ ser = serial.Serial(str(sys.argv[1]))
 
 
 while True :
-    a=0
     arduino_serial = ser.readline()
     arduino_serial = str(arduino_serial)
 
