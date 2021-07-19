@@ -15,7 +15,7 @@ const int servo_pin = 7;
 int info_state = 0;
 int mic_state = 0;
 
-int contrast=0;
+int contrast=50;
 
 
 Servo motor; 
